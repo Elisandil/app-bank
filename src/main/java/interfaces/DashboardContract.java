@@ -9,7 +9,7 @@ import models.User;
 public interface DashboardContract {
     interface View {
         void mostrarUsuario(User usuario);
-        void mostrarCuentas(java.util.List<Account> cuentas);
+        void mostrarCuentas(List<Account> cuentas);
         void mostrarUltimasTransacciones(List<Transaction> transacciones);
         void mostrarError(String mensaje);
         void mostrarCargando();

@@ -33,12 +33,10 @@ public class Transaction {
     public void setCuentaOrigen(String cuentaOrigen) { 
         this.cuentaOrigen = cuentaOrigen; 
     }
-    
     public String getCuentaDestino() { return cuentaDestino; }
     public void setCuentaDestino(String cuentaDestino) { 
         this.cuentaDestino = cuentaDestino; 
     }
-    
     public double getCantidad() { return cantidad; }
     public void setCantidad(double cantidad) { this.cantidad = cantidad; }
     public TipoTransaccion getTipo() { return tipo; }
