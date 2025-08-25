@@ -12,6 +12,7 @@ Una aplicación bancaria de escritorio desarrollada en Java con Swing, implement
 - [Configuración](#configuración)
 - [Seguridad](#seguridad)
 - [Logging](#logging)
+- [Autoría](#autoría)
 
 ## Características
 
@@ -269,5 +270,8 @@ public void miMetodo() {
     }
 }
 ```
+
+## Autoría
+Aplicación desarrollada por Antonio Ortega.
 
 **Nota**: Esta es una aplicación de demostración con fines educativos, sin persistencia.
