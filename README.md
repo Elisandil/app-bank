@@ -270,4 +270,4 @@ public void miMetodo() {
 }
 ```
 
-**Nota**: Esta es una aplicación de demostración con fines educativos.
+**Nota**: Esta es una aplicación de demostración con fines educativos, sin persistencia.
