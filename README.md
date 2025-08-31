@@ -11,7 +11,6 @@ Una aplicación bancaria de escritorio desarrollada en Java con Swing, implement
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Configuración](#configuración)
 - [Seguridad](#seguridad)
-- [Logging](#logging)
 - [Autoría](#autoría)
 
 ## Características
@@ -211,18 +210,6 @@ logging.file.enabled=true
 logging.console.enabled=true
 ```
 
-### Variables de Sistema
-
-Puedes sobrescribir configuraciones usando propiedades del sistema:
-
-```bash
-java -Dapp.environment=production \
-     -Dlogging.level=WARNING \
-     -Dsecurity.session.timeout=3600000 \
-     -cp bin main.Main
-```
-
-
 ## Seguridad
 
 ### Características de Seguridad Implementadas
@@ -233,43 +220,6 @@ java -Dapp.environment=production \
 - **Timeout de sesión** automático
 - **Logging de eventos de seguridad**
 
-## Logging
-
-### Configuración de Logs
-
-La aplicación genera logs en múltiples niveles:
-
-```
-logs/
-├── app-bank-0.log          # Logs generales
-├── app-bank-errors-0.log   # Solo errores y warnings
-└── ...
-```
-
-### Niveles de Log
-
-- **SEVERE**: Errores críticos que afectan la funcionalidad
-- **WARNING**: Situaciones problemáticas que no impiden el funcionamiento
-- **INFO**: Información general sobre el flujo de la aplicación
-- **FINE/FINER/FINEST**: Información detallada para debugging
-
-### Ejemplo de Uso de Logging
-
-```java
-private static final Logger LOGGER = Logger.getLogger(MiClase.class.getName());
-
-public void miMetodo() {
-    LOGGER.info("Iniciando operación");
-    
-    try {
-        // Lógica del método
-        LOGGER.fine("Operación completada exitosamente");
-    } catch (Exception e) {
-        LOGGER.log(Level.SEVERE, "Error en operación", e);
-        throw e;
-    }
-}
-```
 
 ## Autoría
 Aplicación desarrollada por Antonio Ortega.
