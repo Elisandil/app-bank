@@ -32,6 +32,8 @@ Una aplicación bancaria de escritorio desarrollada en Java con Swing, implement
 - **Validaciones de entrada** y seguridad
 - **Thread Safety**: Usar `SwingUtilities.invokeLater()` para actualizaciones de UI
 
+### No dispone de persistencia.
+
 
 ## Arquitectura
 
@@ -224,4 +226,4 @@ logging.console.enabled=true
 ## Autoría
 Aplicación desarrollada por Antonio Ortega.
 
-**Nota**: Esta es una aplicación de demostración con fines educativos, sin persistencia.
+**Nota**: Esta es una aplicación de demostración con fines educativos.
